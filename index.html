@@ -31,27 +31,28 @@
 <p class="meta">Last updated: 2026-07-02</p>
 
 <p>
-  WAVES is a general-purpose tool for <strong>Ecological Momentary Assessment (EMA)</strong> — the
-  in-the-moment collection of survey answers. It sends short questionnaires (“beeps”) to your phone at
-  chosen times and records your answers. You can use WAVES in two ways:
+  WAVES is a <strong>measurement app</strong> for <strong>Ecological Momentary Assessment (EMA)</strong> —
+  the in-the-moment collection of survey answers. It notifies you with short questionnaires
+  (“beeps”) at chosen times and records your answers. You can use WAVES in two ways:
 </p>
 <ul>
-  <li><strong>To take part in a study</strong> that a researcher or organisation has set up; or</li>
-  <li><strong>To run your own private self-monitoring</strong> — you create your own questions and track
-    something about yourself, with the data kept only on your phone.</li>
+  <li><strong>On its own (standalone)</strong> — you create your own questions and measure something
+    about yourself. Everything stays on your phone; the app sends nothing anywhere.</li>
+  <li><strong>Connected to a research study</strong> — you enrol in a study that a researcher or
+    organisation has set up, and your answers are sent to <strong>that study’s server</strong>.</li>
 </ul>
 
 <div class="callout">
-  <strong>WAVES is a tool, not a study.</strong> The questions you are asked, and the purpose they serve,
-  are defined by whoever set up the study you join — not by the app itself. WAVES does not decide what
-  data is collected, and it is not specific to health or any other topic. When you join a study, that
-  study shows you its own information and (where required) asks for your consent inside the app
-  <em>before</em> you answer anything.
+  <strong>WAVES is a tool, not a study.</strong> The questions you are asked, the purpose they serve, and
+  the server your answers are sent to are all defined by whoever set up the study you join — not by the
+  app itself. WAVES does not decide what data is collected, and it is not specific to health or any other
+  topic. When you join a study, that study shows you its own information and (where required) asks for
+  your consent inside the app <em>before</em> you answer anything.
 </div>
 
 <p>
-  This policy explains what the <strong>WAVES platform</strong> (the app and its server) does with data.
-  Each study that uses WAVES is responsible for its own purposes, lawful basis and any ethical approval —
+  This policy explains what the <strong>WAVES app</strong> does with data in each mode of use. Each study
+  that uses WAVES is responsible for its own purposes, lawful basis, server and any ethical approval —
   see section 3.
 </p>
 
@@ -60,43 +61,43 @@
 <table>
   <tr><th>Role</th><th>Who</th><th>Responsible for</th></tr>
   <tr>
-    <td><strong>The WAVES platform operator</strong></td>
-    <td>Karolinska Institutet, SE-171 77 Stockholm, Sweden</td>
-    <td>Operating the app and server (<code>waves.carli.nu</code>) and the technical data needed to run
-        the service (section 4)</td>
+    <td><strong>The app provider</strong></td>
+    <td>Jesper Alvarsson-Hjort<br>(contact: jesper.alvarsson@gmail.com)</td>
+    <td>Developing and providing the WAVES app. In standalone use, the app provider receives no data
+        about you at all.</td>
   </tr>
   <tr>
     <td><strong>The study organiser</strong></td>
     <td>The researcher / organisation who set up the study you joined (named in that study’s own
         information screen)</td>
-    <td>Choosing what questions are asked, why, the lawful basis, and obtaining any ethical approval and
-        your consent</td>
+    <td>Choosing what questions are asked and why, the lawful basis, any ethical approval and your
+        consent, and <strong>the server that receives your answers</strong></td>
   </tr>
   <tr>
-    <td><strong>You</strong> (self-monitoring only)</td>
+    <td><strong>You</strong> (standalone use)</td>
     <td>You, when not enrolled in any study</td>
-    <td>Your own self-monitoring data, which stays on your device</td>
+    <td>Your own measurements, which stay on your device unless you explicitly export them</td>
   </tr>
 </table>
-<ul>
-  <li>Platform Data Protection Officer (DPO): dataskyddsombud@ki.se</li>
-  <li>Platform contact: waves@ki.se</li>
-</ul>
-<p class="note">The exact data-protection relationship between the platform operator and each study
-  organiser (controller / processor / joint controllers) is set out in the agreement between them and in
-  each study’s own information.</p>
+<p class="note">WAVES is currently in a testing phase and is provided by an individual developer; the
+  provider and contact details above will be updated when the app moves to production operation. Where
+  the app provider also operates a server on a study’s behalf, the exact data-protection relationship
+  (controller / processor / joint controllers) is set out in the agreement between them and in that
+  study’s own information.</p>
 
 <h2>2. Scope</h2>
-<p>This policy covers the WAVES mobile app (iOS and Android) and the WAVES server
-  (<code>waves.carli.nu</code>). It does not replace the separate information, consent text, or privacy
-  notice that an individual study provides to its participants.</p>
+<p>This policy covers the WAVES mobile app (iOS and Android). The server a study uses is chosen by that
+  study: this policy describes what the app sends there (section 4), while what that study does with your
+  data is governed by the study’s own information, consent text and privacy notice. This policy does not
+  replace them.</p>
 
-<h2>3. Studies define their own data and lawful basis</h2>
+<h2>3. Studies define their own data, lawful basis and server</h2>
 <p>
-  When you join a study, that study controls <strong>what</strong> you are asked and <strong>why</strong>.
-  Different studies collect different things; some may ask about health or other sensitive topics, others
-  may not. WAVES treats your answers as content belonging to that study and does not predefine or restrict
-  the subject matter.
+  When you join a study, that study controls <strong>what</strong> you are asked, <strong>why</strong>,
+  and <strong>where your answers are sent</strong>: enrolment (usually by scanning a QR code) configures
+  the app with that study’s server address. Different studies collect different things and may use
+  different servers, run by different institutions — not necessarily by the app provider or by any one
+  organisation. The server is part of the study you choose to join.
 </p>
 <p>
   Before you answer anything in a study, WAVES shows you that study’s own information and, where the study
@@ -107,55 +108,60 @@
   withdraw later, without giving a reason.
 </p>
 
-<h2>4. What the WAVES platform processes</h2>
+<h2>4. What data the WAVES app handles</h2>
 
 <h3>4.1 When you take part in a study</h3>
+<p>The app sends the following to <strong>the study’s server</strong> — the server address configured at
+  enrolment by the study you joined:</p>
 <table>
-  <tr><th>Data</th><th>Why the platform processes it</th><th>Where</th></tr>
+  <tr><th>Data</th><th>Why it is processed</th><th>Where</th></tr>
   <tr>
     <td><strong>A pseudonymous participant code</strong> (e.g. <code>ID1001</code>) and an internal random
       identifier</td>
     <td>To link your answers to your enrolment without using your name</td>
-    <td>Server</td>
+    <td>Study server</td>
   </tr>
   <tr>
     <td><strong>An enrolment code / device token</strong> (the code in your QR)</td>
     <td>To securely connect your phone to the study</td>
-    <td>Phone (secure keystore) + server</td>
+    <td>Phone (secure keystore) + study server</td>
   </tr>
   <tr>
     <td><strong>Your answers</strong> to the study’s questions</td>
     <td>To deliver them to the study that set them. Their content and meaning are defined by the study,
       not by WAVES.</td>
-    <td>Phone (until uploaded) + server</td>
+    <td>Phone (until uploaded) + study server</td>
   </tr>
   <tr>
     <td><strong>Answer time</strong> and your phone’s <strong>time zone</strong> (e.g.
       “Europe/Stockholm”)</td>
     <td>So answers can be interpreted in local time. This is a coarse region indicator — <em>not</em>
       GPS or precise location.</td>
-    <td>Server</td>
+    <td>Study server</td>
   </tr>
   <tr>
     <td><strong>A push-notification token</strong> + device platform (iOS/Android)</td>
-    <td>So the server can tell your phone when an updated schedule is available (section 6)</td>
-    <td>Server + Google Firebase</td>
+    <td>So the study’s server can tell your phone when an updated schedule is available (section 6)</td>
+    <td>Study server + Google Firebase</td>
   </tr>
   <tr>
     <td><strong>Your e-mail address</strong> — only if a study invites you by e-mail</td>
     <td>To send you the invitation / QR code</td>
-    <td>Server (invitation record)</td>
+    <td>Study server (invitation record)</td>
   </tr>
   <tr>
     <td><strong>Your consent decision</strong> (accept / decline), if the study asks for it</td>
     <td>To record your choice</td>
-    <td>Server</td>
+    <td>Study server</td>
   </tr>
 </table>
 
-<h3>4.2 When you self-monitor (no study)</h3>
-<p>The questions you create and the answers you give are <strong>stored only on your phone</strong> and
-  are <strong>never uploaded</strong>. No one else, including the platform operator, can see them.</p>
+<h3>4.2 When you use WAVES standalone (no study)</h3>
+<p>The questions you create and the answers you give are <strong>stored only on your phone</strong>. The
+  app <strong>never transmits them anywhere</strong> — there is no account and no server connection. No
+  one else, including the app provider, can see them. The only way this data leaves your phone is if
+  <strong>you explicitly export it</strong> (for example, sharing an export file); where you send an
+  export is entirely your own choice.</p>
 
 <h3>4.3 Camera</h3>
 <p>WAVES uses the camera <strong>only</strong> to scan an enrolment QR code when you join a study. The
@@ -167,56 +173,60 @@
   <li>No access to contacts, photos, files, microphone, or call/SMS data.</li>
   <li>No advertising identifiers, no advertising.</li>
   <li>No third-party analytics or tracking SDKs.</li>
-  <li>We do not sell your data or use it for anything beyond running the service and delivering it to the
-    study you joined (or keeping your self-monitoring data on your device).</li>
+  <li>Your data is not sold or used for anything beyond running the app and delivering your answers to
+    the study you joined (or keeping your standalone data on your device).</li>
 </ul>
 
-<h2>5. Lawful basis for the platform’s own processing</h2>
+<h2>5. Lawful basis for the app’s own processing</h2>
 <p>
-  The platform operator processes the technical data in section 4.1 in order to provide the service you
-  asked to use — i.e. to perform the service and on the basis of its legitimate interest in operating a
-  functioning research tool. The lawful basis for the <em>study’s</em> use of your answers is the study’s
-  responsibility (section 3). Self-monitoring data is processed only on your own device.
+  In standalone use, the app processes your data only on your own device, and the app provider processes
+  no personal data about you. When you join a study, the technical data in section 4.1 is processed
+  because it is necessary to deliver the participation you asked for. The lawful basis for the
+  <em>study’s</em> use of your answers is the study’s responsibility (section 3).
 </p>
 
 <h2>6. Who data is shared with</h2>
-<p>We do not sell data. The platform relies on:</p>
+<p>WAVES contains no advertising and your data is not sold. What is shared depends on how you use the
+  app:</p>
 <ul>
-  <li><strong>Server hosting</strong> — the WAVES server runs on infrastructure operated by
-    Karolinska Institutet, Sweden (EU).</li>
-  <li><strong>Cloudflare</strong> — network traffic between the app and the server is routed through
-    Cloudflare (a proxy / content-delivery service), which processes connection data such as IP
-    addresses in order to route and protect that traffic.</li>
-  <li><strong>Google Firebase Cloud Messaging (FCM)</strong> — used only to send a “new schedule
-    available” signal to your phone. The push message contains <strong>no answers</strong>; Google
-    receives only the routing token. Google may process this outside the EU/EEA under its standard
-    contractual clauses.</li>
-  <li><strong>The study organiser</strong> you enrolled with receives the answers you give in that study.</li>
+  <li><strong>Standalone use</strong> — nothing is shared with anyone. Data leaves your phone only if you
+    export and send it yourself.</li>
+  <li><strong>The study’s server</strong> — while you are enrolled, the data in section 4.1 is sent to
+    the server chosen by that study. Who operates that server, where it is hosted, and how it is secured
+    are described in that study’s own information.</li>
+  <li><strong>The study organiser</strong> you enrolled with receives the answers you give in that
+    study.</li>
+  <li><strong>Google Firebase Cloud Messaging (FCM)</strong> — used only while you are enrolled in a
+    study, to send a “new schedule available” signal to your phone. The push message contains
+    <strong>no answers</strong>; Google receives only the routing token. Google may process this outside
+    the EU/EEA under its standard contractual clauses.</li>
 </ul>
 <p class="note">Apple and Google also process basic technical data inherent to running any app on their
   platforms, under their own privacy policies.</p>
 
 <h2>7. Security</h2>
 <ul>
-  <li>All data between the app and server travels over <strong>encrypted HTTPS/TLS</strong>.</li>
+  <li>All data between the app and a study’s server travels over <strong>encrypted HTTPS/TLS</strong>;
+    the app blocks unencrypted connections.</li>
   <li>Your enrolment credential is stored in your phone’s <strong>secure keystore</strong> (iOS
     Keychain / Android Keystore).</li>
-  <li>Server access is restricted to authorised staff and protected by authentication, rate-limiting and
-    an audit log.</li>
+  <li>Standalone data never leaves your device (section 4.2).</li>
+  <li>Security measures on a study’s server (access control, storage, backups) are the responsibility of
+    that study’s server operator and are described in the study’s own information.</li>
 </ul>
 
 <h2>8. How long data is kept</h2>
 <p>
   The <strong>study</strong> you join sets how long its answers are kept and tells you in its own
-  information. The platform deletes enrolment invitations and tokens when participation ends.
-  <strong>Self-monitoring</strong> data stays on your phone until you delete it or uninstall the app.
+  information; enrolment invitations and tokens are removed from the study’s server when participation
+  ends. <strong>Standalone</strong> data stays on your phone until you delete it or uninstall the app.
 </p>
 
 <h2>9. Your rights</h2>
 <p>Under the GDPR you can request access to, correction of, erasure of, restriction of, or portability of
   your personal data, and you can object to processing or withdraw consent. To exercise these for a
-  <em>study’s</em> data, contact that study (its information names the contact); for the platform’s
-  technical data, contact the platform DPO in section 1. You may also complain to the Swedish Authority
+  <em>study’s</em> data, contact that study (its information names the contact); for questions about the
+  app itself, contact the app provider (section 12). You may also complain to the Swedish Authority
   for Privacy Protection (IMY, <a href="https://www.imy.se">imy.se</a>) or your local supervisory
   authority.</p>
 
@@ -230,8 +240,7 @@
 
 <h2>12. Contact</h2>
 <p>
-  Platform / this policy: waves@ki.se<br>
-  Data Protection Officer: dataskyddsombud@ki.se<br>
+  App provider / this policy: Jesper Alvarsson-Hjort, jesper.alvarsson@gmail.com<br>
   For a specific study: see that study’s own information shown in the app.
 </p>
 
