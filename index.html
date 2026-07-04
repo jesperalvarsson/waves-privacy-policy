@@ -28,7 +28,7 @@
 <body>
 
 <h1>WAVES Privacy Policy</h1>
-<p class="meta">Last updated: 2026-07-02</p>
+<p class="meta">Last updated: 2026-07-04</p>
 
 <p>
   WAVES is an app for <strong>Ecological Momentary Assessment (EMA)</strong>: it helps you measure
@@ -61,6 +61,16 @@
 <p>
   The only way self-monitoring data leaves your phone is if <strong>you explicitly export it</strong>
   (for example by sharing an export file). Where you send an export is entirely your own choice.
+</p>
+<p>
+  <strong>Optional location tagging.</strong> When you build your own measurement you can choose, per
+  question, to <strong>tag your answers with your location (GPS)</strong>. This is <strong>off by
+  default</strong>: it only happens for questions where <em>you</em> turn it on. When it is on, the app
+  takes a <strong>single location reading at the moment you answer</strong> that check-in and stores it
+  next to that answer. There is no continuous or background tracking. Because this is
+  self-monitoring, the location stays on your phone with the rest of your data and is
+  <strong>never transmitted</strong>. See section 6 for exactly how activation and permissions work on
+  Android and iOS.
 </p>
 
 <h2>3. Research studies (optional)</h2>
@@ -111,9 +121,17 @@
   <tr>
     <td><strong>Answer time</strong> and your phone&rsquo;s <strong>time zone</strong> (e.g.
       &ldquo;Europe/Stockholm&rdquo;)</td>
-    <td>So answers can be interpreted in local time. This is a coarse region indicator, <em>not</em>
-      GPS or precise location.</td>
+    <td>So answers can be interpreted in local time. The time zone is a coarse region indicator,
+      <em>separate</em> from the optional location below.</td>
     <td>Study server</td>
+  </tr>
+  <tr>
+    <td><strong>Your location (GPS)</strong>, <em>only if the study turns location tagging on</em>:
+      a single reading taken when you answer, optionally reduced in precision by the study</td>
+    <td>To let the study analyse where answers were given. Whether this is collected at all, for which
+      check-ins, and at what precision are set by the study and explained in <strong>its own
+      information</strong>. When the study has not enabled it, no location is collected or sent.</td>
+    <td>Phone (until uploaded) + study server</td>
   </tr>
   <tr>
     <td><strong>A push-notification token</strong> + device platform (iOS/Android)</td>
@@ -138,7 +156,10 @@
 
 <h2>4. What WAVES never does</h2>
 <ul>
-  <li>No GPS or precise location.</li>
+  <li>No location in the background and no continuous tracking. WAVES reads your location
+    <strong>only</strong> when location tagging is switched on (by you in self-monitoring, or by a
+    study you have joined), and then only a <strong>single reading at the moment you answer</strong>
+    a check-in. It is <strong>off by default</strong> (section 6).</li>
   <li>No access to contacts, photos, files, microphone, or call/SMS data.</li>
   <li>No advertising and no advertising identifiers.</li>
   <li>No third-party analytics or tracking SDKs.</li>
@@ -162,7 +183,51 @@
 <p class="note">Apple and Google also process basic technical data inherent to running any app on their
   platforms, under their own privacy policies.</p>
 
-<h2>6. Security</h2>
+<h2>6. How location tagging works, and how you turn it on</h2>
+<p>
+  Location tagging is always <strong>opt-in and off by default</strong>. When it is active, WAVES records
+  a <strong>single location reading at the moment you answer a check-in</strong> and attaches it to that
+  answer. WAVES does <strong>not</strong> follow you in the background, does not track a route, and does
+  not read your location at any other time. There are two separate ways it can be switched on:
+</p>
+<ul>
+  <li><strong>Self-monitoring, you decide.</strong> When you build your own measurement, each
+    question has a &ldquo;Tag answers with location (GPS)&rdquo; switch that <strong>you</strong> turn on
+    or off. Nothing is shared: the reading stays on your phone with the rest of your self-monitoring data
+    (section 2).</li>
+  <li><strong>Research study: the study decides, and tells you.</strong> In a study, whether
+    location is tagged, for which check-ins, and at what precision are part of the <strong>study&rsquo;s
+    configuration</strong>, and are described in <strong>that study&rsquo;s own information</strong> shown
+    to you before you take part. When the study has enabled it, the reading is sent to the study&rsquo;s
+    server together with your answer (section 3.1); a study may also choose to reduce the precision of the
+    location before it is stored.</li>
+</ul>
+<p>
+  Either way, your phone asks for your permission the first time a location reading is needed, and you can
+  refuse or revoke it at any time in your phone&rsquo;s settings. If permission is not granted, WAVES
+  simply records no location and everything else keeps working.
+</p>
+<table>
+  <tr><th>Platform</th><th>Permission WAVES asks for</th><th>What that allows</th></tr>
+  <tr>
+    <td><strong>Android</strong></td>
+    <td>Location &ldquo;<strong>While using the app</strong>&rdquo; (foreground, precise or approximate).
+      WAVES never requests &ldquo;Allow all the time&rdquo; / background location.</td>
+    <td>A reading can be taken only while you are actively using WAVES to answer a check-in. You can change
+      or withdraw this in <em>Settings &rsaquo; Apps &rsaquo; WAVES &rsaquo; Permissions &rsaquo;
+      Location</em>, and choose Precise or Approximate.</td>
+  </tr>
+  <tr>
+    <td><strong>iOS</strong></td>
+    <td>Location &ldquo;<strong>While Using the App</strong>&rdquo;. WAVES never requests
+      &ldquo;Always&rdquo; / background location.</td>
+    <td>A reading can be taken only while WAVES is in use. You can change or withdraw this, and toggle
+      Precise Location, in <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Location Services &rsaquo;
+      WAVES</em>.</td>
+  </tr>
+</table>
+
+<h2>7. Security</h2>
 <ul>
   <li>Self-monitoring data never leaves your device (section 2).</li>
   <li>All data between the app and a study&rsquo;s server travels over <strong>encrypted HTTPS/TLS</strong>;
@@ -173,25 +238,25 @@
     of that study&rsquo;s server operator.</li>
 </ul>
 
-<h2>7. How long data is kept</h2>
+<h2>8. How long data is kept</h2>
 <p>
   Self-monitoring data stays on your phone until you delete it or uninstall the app. For research
   studies, the study sets how long its answers are kept and tells you in its own information; enrolment
   invitations and tokens are removed from the study&rsquo;s server when participation ends.
 </p>
 
-<h2>8. Your rights</h2>
+<h2>9. Your rights</h2>
 <p><strong>Self-monitoring.</strong> This data stays on your own device and in your own hands: you can
   view or export it, and delete it at any time, or remove all of it by uninstalling the app. Because the
   app provider never receives self-monitoring data, there is no one else to make a request to.</p>
 <p><strong>Research studies.</strong> Under the GDPR you can request access to, correction of, erasure of,
   restriction of, or portability of your personal data, and you can object to processing or withdraw
   consent. For a <em>study&rsquo;s</em> data, contact that study (its information names the contact); for
-  questions about the app itself, contact the app provider (section 11). You may also complain to the
+  questions about the app itself, contact the app provider (section 12). You may also complain to the
   Swedish Authority for Privacy Protection (IMY, <a href="https://www.imy.se">imy.se</a>) or your local
   supervisory authority.</p>
 
-<h2>9. Age and children</h2>
+<h2>10. Age and children</h2>
 <p><strong>Self-monitoring.</strong> WAVES sets no age limit when you use it for yourself. The ready-made
   designs included in the app are written to be suitable for any age, as long as the reader understands
   the questions. If you create your own questions instead, the app does not control what they contain, so
@@ -200,11 +265,11 @@
 <p><strong>Research studies.</strong> Whether a study enrols minors, and any minimum age, is decided by
   that study and set out in its own information.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <p>If this policy changes, the date above will be updated and, for material changes, active users will be
   notified through the app.</p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>
   App provider / this policy: Jesper Alvarsson-Hjort, jesper.alvarsson@gmail.com<br>
   For a specific study: see that study&rsquo;s own information shown in the app.
